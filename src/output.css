@@ -936,6 +936,16 @@ video {
     order: 9999;
   }
 
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .md\:h-full {
     height: 100%;
   }
@@ -1000,8 +1010,17 @@ video {
     border-radius: 1.5rem;
   }
 
+  .md\:bg-darkSlateGray {
+    --tw-bg-opacity: 1;
+    background-color: hsl(234 29% 20% / var(--tw-bg-opacity));
+  }
+
   .md\:p-6 {
     padding: 1.5rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:px-6 {
