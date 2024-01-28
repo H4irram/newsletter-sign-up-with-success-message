@@ -10,7 +10,7 @@ const submitForm = (event) => {
     emailInput.style.borderColor = "hsl(4, 100%, 67%)";
     emailInput.style.color = "hsl(4, 100%, 67%)";
     emailInput.style.backgroundColor = "hsl(4, 100%, 67%, 0.1)";
-    emailInput.placeholder.style.color = "hsl(4, 100%, 67%)"; // Update placeholder color
+    emailInput.placeholder.style.color = "hsl(4, 100%, 67%)"; //
     return; // Stop execution if email is not valid
   }
 
@@ -19,6 +19,7 @@ const submitForm = (event) => {
   emailInput.style.borderColor = "";
   emailInput.style.color = "";
   emailInput.style.backgroundColor = "";
+  emailInput.placeholder.style.color = "";
 
   // Redirect to thank-you.html with email as a query parameter
   window.location.href = `thank-you.html?email=${encodeURIComponent(email)}`;
