@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-darkSlateGray font-roboto"
+  >
+    <main>
+      <section class="h-screen bg-pureWhite md:h-full md:rounded-3xl">
+        <article class="container max-w-[1000px] md:p-6">
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+            <div class="md:order-last">
+              <picture>
+                <source
+                  class="block w-full"
+                  srcset="./assets/images/illustration-sign-up-desktop.svg"
+                  media="(min-width: 768px)"
+                  alt="desktop-image"
+                />
+                <img
+                  class="block w-full"
+                  src="./assets/images/illustration-sign-up-mobile.svg"
+                  alt="mobile-picture"
+                />
+              </picture>
+            </div>
+            <div class="flex flex-col justify-center gap-6 p-6">
+              <h1
+                class="text-[2.5rem] font-bold text-darkSlateGray md:text-[4rem]"
+              >
+                Stay updated!
+              </h1>
+              <p class="text-base text-charcoalGray md:text-[18px]">
+                Join 60,000+ product managers receiving monthly updates on:
+              </p>
+              <ul class="space-y-3 text-charcoalGray md:text-[18px]">
+                <li class="flex items-start gap-4">
+                  <img src="/assets/images/icon-list.svg" alt="icon" />Product
+                  discovery and building what matters
+                </li>
+                <li class="flex items-start gap-4">
+                  <img src="/assets/images/icon-list.svg" alt="icon" />Measuring
+                  to ensure updates are a success
+                </li>
+                <li class="flex items-start gap-4">
+                  <img src="/assets/images/icon-list.svg" alt="icon" />And much
+                  more!
+                </li>
+              </ul>
+              <form id="myForm" class="mt-4 flex flex-col gap-6">
+                <div class="flex flex-col gap-2">
+                  <label
+                    for="form"
+                    class="flex justify-between text-sm font-bold"
+                    >Email address
+                    <span id="errorMessage" class="hidden text-tomato"
+                      >Valid email required</span
+                    ></label
+                  >
+                  <input
+                    id="emailInput"
+                    class="cursor-pointer rounded-lg border p-4 text-darkSlateGray focus:border-darkSlateGray focus:outline-none"
+                    type="email"
+                    placeholder="email@company.com"
+                    required
+                  />
+                </div>
+                <button
+                  id="btn"
+                  type="button"
+                  onclick="submitForm(event)"
+                  class="rounded-lg bg-darkSlateGray py-4 text-base font-bold text-pureWhite duration-300 ease-in-out hover:bg-tomato active:bg-darkSlateGray"
+                >
+                  Subscribe to monthly newsletter
+                </button>
+              </form>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

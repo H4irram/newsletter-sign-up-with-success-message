@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Thanks for subscribing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-darkSlateGray font-roboto"
+  >
+    <main>
+      <section
+        class="h-screen bg-pureWhite md:h-full md:max-w-[500px] md:rounded-3xl md:shadow-lg"
+      >
+        <article class="container md:p-6">
+          <div class="flex flex-col">
+            <div
+              class="flex h-screen flex-col justify-between p-6 md:h-full md:gap-8"
+            >
+              <div class="flex flex-col gap-8 pt-32 md:pt-0">
+                <img
+                  class="mb-4 h-16 w-16 md:h-14 md:w-14"
+                  src="./assets/images/icon-success.svg"
+                  alt="success icon"
+                />
+                <h1
+                  class="text-[2.5rem] font-bold leading-10 text-darkSlateGray md:text-[4rem] md:leading-none"
+                >
+                  Thanks for subscribing!
+                </h1>
+                <p class="text-base text-charcoalGray md:text-lg">
+                  A confirmation email has been sent to
+                  <span id="userEmail" class="font-bold"></span>
+                  Please open it and click the button inside to confirm your
+                  subscription.
+                </p>
+              </div>
+
+              <a
+                href="/index.html"
+                class="rounded-lg bg-darkSlateGray py-4 text-center text-base font-bold text-pureWhite duration-300 ease-in-out hover:bg-tomato"
+              >
+                Dismiss message
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
